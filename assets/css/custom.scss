@@ -10,8 +10,70 @@
 
 .intro {
     background-image:url(../images/laptop.jpg);
+    background-image:none;
+    background:#0098ef;
+    margin-bottom:0px;
 }
 
-@media (max-width: 400px) {
-.logo {width:75%}
+.intro h1 {
+font-weight:400;
+color:#fff;
 }
+
+.intro h2 {
+color:#fff;
+}
+
+.intro .btn {
+background:#fc3;
+color:#4a5669;
+}
+
+.intro a:hover {
+background:#fff100;
+color:#000;
+}
+
+.wrapintro {
+  background:none;
+  margin: 0px auto;
+  padding: 2rem 0rem;
+}
+
+.logo {width:75%}
+
+.kontak h3{
+text-align:center;
+padding:10px 10px;
+}
+
+.footer {
+    text-align: left;
+}
+
+@media (min-width: 1119px) {
+  .wrapintro {
+  margin-left:0px;
+  }
+}
+
+@media (min-width: 991px) {
+  .wrapintro {
+  margin-left:0px;
+  padding:0px 0px;
+  text-align: left;
+  }
+}
+
+@media (min-width: 575px) {
+.logo {width:100%}
+}
+
+@media (min-width: 400px) {
+
+}
+
+
+
+
+
