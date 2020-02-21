@@ -13,12 +13,15 @@ html {
 }
 
 .intro {
-    background:#0098ef;
+    
     background-image:url(../images/laptop.jpg);
-    background-image:none;
-    background-image: linear-gradient(218deg,#3cc4fe 0,#1474ff 100%);
-
+    //background-image:none;
+    //background-image: linear-gradient(218deg,#3cc4fe 0,#1474ff 100%);
+    background-size:cover;
     margin-bottom:0px;
+    background-color:#0098ef;
+    background-blend-mode: multiply;
+
 }
 
 .intro h1 {
@@ -58,7 +61,7 @@ color:#000;
 .wrapintro {
   background:none;
   margin: 0px auto;
-  padding: 2rem 0rem;
+  width:auto;
 }
 
 .logo {width:75%}
@@ -67,9 +70,10 @@ color:#000;
 background-image: url(../images/moto.png);
 background-size: contain;
 background-repeat: no-repeat;
-min-height:200px;
-background-position:center center;
+
+background-position:center top;
 margin:40px 0px 40px 0px;
+
 }
 
 .who {
@@ -117,6 +121,8 @@ padding:50px 30px 50px 30px;
 
 #loading {
 		-webkit-animation: rotation 2s infinite linear;
+		display:block;
+		width:100%;
 }
 
 @-webkit-keyframes rotation {
@@ -128,33 +134,49 @@ padding:50px 30px 50px 30px;
 		}
 }
 
-@media (min-width: 1119px) {
+@media (min-width: 575px) {
+  .logo {
+    width:100%;
+  }
+  
   .wrapintro {
-  margin-left:0px;
+    padding-bottom:70px;
+    text-align: left;
+    }
+    
+  #loading{
+  display:block;
+  }
+  
+  .moto{
+  max-width:300px;
+
   }
 }
 
+
 @media (min-width: 991px) {
   .wrapintro {
-  margin-left:0px;
-  padding:0px 0px;
-  text-align: left;
-  
+  margin-left:0px;  
+  padding-top:0px;
   }
   
   .moto{
   margin:0px 0px 0px 0px;
+  display:block;
+  }
+  
+  #loading{
+  display:block;
   }
 
 }
 
-@media (min-width: 575px) {
-.logo {width:100%}
-.wrapintro {padding-bottom:50px;}
-}
 
-@media (min-width: 400px) {
-
+@media (min-width: 1119px) {
+  .wrapintro {
+  margin-left:0px;
+  }
 }
 
 
