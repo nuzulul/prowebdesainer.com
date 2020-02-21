@@ -59,6 +59,15 @@ color:#000;
 
 .logo {width:75%}
 
+.moto{
+background-image: url(../images/moto.png);
+background-size: contain;
+background-repeat: no-repeat;
+min-height:200px;
+background-position:center center;
+margin:40px 0px 40px 0px;
+}
+
 .who {
 text-align:center;
 padding:30px 0px;
@@ -97,6 +106,19 @@ padding:50px 30px 50px 30px;
 
 .layanan ul li:before { content:"\2714\0020"; }
 
+#loading {
+		-webkit-animation: rotation 2s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+		from {
+				-webkit-transform: rotate(0deg);
+		}
+		to {
+				-webkit-transform: rotate(359deg);
+		}
+}
+
 @media (min-width: 1119px) {
   .wrapintro {
   margin-left:0px;
@@ -109,6 +131,10 @@ padding:50px 30px 50px 30px;
   padding:0px 0px;
   text-align: left;
   
+  }
+  
+  .moto{
+  margin:0px 0px 0px 0px;
   }
 
 }
