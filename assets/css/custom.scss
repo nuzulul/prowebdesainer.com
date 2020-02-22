@@ -8,6 +8,8 @@
 	"syntax"
 ;
 
+
+
 html {
   scroll-behavior: smooth;
 }
@@ -120,12 +122,12 @@ padding:50px 30px 50px 30px;
 .layanan ul li:before { content:"\2714\0020"; }
 
 #loading {
-		-webkit-animation: rotation 2s infinite linear;
+		//-webkit-animation: rotationloading 2s infinite linear;
 		display:block;
 		width:100%;
 }
 
-@-webkit-keyframes rotation {
+@-webkit-keyframes rotationloading {
 		from {
 				-webkit-transform: rotate(0deg);
 		}
@@ -178,8 +180,6 @@ padding:50px 30px 50px 30px;
   margin-left:0px;
   }
 }
-
-
 
 
 
